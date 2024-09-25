@@ -1,0 +1,24 @@
+02. Analogias
+Teste de Unidade: Imagine que você está testando cada peça de um quebra-cabeça individualmente, verificando se cada peça foi cortada corretamente e se pode ser montada sem problemas.
+Teste de Integração: Agora, imagine que você está juntando essas peças do quebra-cabeça. Mesmo que cada uma esteja correta, é preciso verificar se elas se encaixam perfeitamente umas nas outras para formar a imagem final.
+ 
+03. Pesquisa Detalhada
+Teste de Unidade
+Propósito: Garantir que cada componente isolado (função, método, ou módulo) funcione conforme esperado, independentemente do resto do sistema.
+Como é realizado: Usa-se frameworks de testes específicos para a linguagem de programação, como JUnit para Java ou PyTest para Python, criando testes automáticos para cada unidade do código.
+Resultados esperados: Identificar erros em pequenas partes do código antes que elas impactem outros módulos. O sucesso é quando cada unidade passa nos testes.
+Exemplo: Testar uma função de cálculo de total em um sistema de compras online, garantindo que a função calcule corretamente independentemente dos dados recebidos.
+ 
+Teste de Integração
+Propósito: Verificar se os diferentes componentes do sistema funcionam bem juntos, focando na troca de informações entre módulos.
+Como é realizado: Reúne dois ou mais módulos que foram testados de forma isolada e simula sua interação. Pode usar ferramentas de automação, como Selenium para testes de interface ou Postman para APIs.
+Resultados esperados: Garantir que os dados fluam corretamente entre os módulos sem erros. O sucesso ocorre quando todos os módulos interagem conforme o esperado.
+Exemplo: Verificar se o módulo de pagamento de um e-commerce comunica corretamente com o módulo de estoque para atualizar a quantidade de produtos após uma compra.
+ 
+04. Comparativo entre Teste de Unidade e Teste de Integração
+Aspecto	Teste de Unidade	Teste de Integração
+Objetivo	Verificar o funcionamento correto de componentes individuais.	Verificar a interação correta entre múltiplos componentes.
+Metodologia	Teste de uma função ou módulo isolado.	Teste de dois ou mais módulos juntos para verificar a comunicação.
+Exemplo		Testar uma função de login.	Verificar se o sistema de autenticação se comunica corretamente com o banco de dados.
+Importância	Detecta erros pequenos e específicos.	Garante que módulos corretos individualmente funcionem juntos sem problemas.
+Quando ocorre	Nas fases iniciais do ciclo de desenvolvimento, antes de integrar.	Ocorre após os testes unitários, antes da validação completa do sistema.
